@@ -1,10 +1,10 @@
 module.exports = {
-    siteUrl: `https://gatsby.ghost.org`, // Site domain. Do not include a trailing slash!
+    siteUrl: `https://JayKannaiyan.com`, // Site domain. Do not include a trailing slash!
 
     postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
-    siteTitleMeta: `JK Ghost Gatsby Starter`, // This allows an alternative site title for meta data for pages.
-    siteDescriptionMeta: `A starter template to build amazing static websites with Ghost and Gatbsy`, // This allows an alternative site description for meta data for pages.
+    siteTitleMeta: `Jay Kannaiyan's Website`, // This allows an alternative site title for meta data for pages.
+    siteDescriptionMeta: `A blog to capture thoughts on coding, motorcycling, and good food.`, // This allows an alternative site description for meta data for pages.
 
     shareImageWidth: 1000, // Change to the width of your default share image
     shareImageHeight: 523, // Change to the height of your default share image
