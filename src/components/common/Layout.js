@@ -22,7 +22,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = data.allGhostSettings.edges[0].node
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
-
+    console.log("JK site:", site)
     return (
     <>
         <Helmet>
@@ -53,7 +53,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         </div>
                         { isHome ?
                             <div className="site-banner">
-                                <img className="site-banner-image" src={site.image.url} alt={site.title} />
+                                <img className="site-banner-image" src={site.image} alt={site.title} />
                                 <h1 className="site-banner-title">{site.title}</h1>
                                 <p className="site-banner-desc">{site.description}</p>
                             </div> :
@@ -96,6 +96,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     </>
     )
 }
+
 
 DefaultLayout.propTypes = {
     children: PropTypes.node.isRequired,
