@@ -3,7 +3,7 @@ module.exports = {
 
     postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
-    siteTitleMeta: `Jay Kannaiyan's Website`, // This allows an alternative site title for meta data for pages.
+    siteTitleMeta: `Jay Kannaiyan's Website built with Ghost`, // This allows an alternative site title for meta data for pages.
     siteDescriptionMeta: `A blog to capture thoughts on coding, motorcycling, and good food.`, // This allows an alternative site description for meta data for pages.
 
     shareImageWidth: 1000, // Change to the width of your default share image
