@@ -776,7 +776,6 @@ h6 {
 .post-feed {
     position: relative;
     display: grid;
-    margin: -70px 0 0 0;
     justify-content: space-between;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -817,6 +816,7 @@ h6 {
 
 .post-card-tags {
     margin: 0 0 5px 0;
+    padding: 0 1em;
     font-size: 1.4rem;
     line-height: 1.15em;
     color: var(--color-secondary);
@@ -825,14 +825,14 @@ h6 {
 
 .post-card-title {
     margin: 0 0 10px 0;
-    padding: 1em;
+    padding: 0 1em;
 }
 
 .post-card-excerpt {
     font-size: 1.6rem;
     line-height: 1.55em;
     color: #3c484e;
-    padding: 1em;
+    padding: 0 1em;
 }
 
 .post-card-image {
@@ -845,7 +845,7 @@ h6 {
 }
 
 .post-card-footer {
-    padding: 1em;
+    padding: 0 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
