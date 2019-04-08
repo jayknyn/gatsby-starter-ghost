@@ -672,7 +672,7 @@ h6 {
     display: inline-block;
     padding: 5px 10px;
     color: #fff;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .site-nav-item:hover {
@@ -770,7 +770,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-main {
-    padding: 4vw 0;
+    padding: 0 0;
 }
 
 /* Index
@@ -778,7 +778,7 @@ h6 {
 
 .post-feed {
     position: relative;
-    margin: -100px 0 0 0;
+    margin: 0 0 0 0;
     display: grid;
     justify-content: space-between;
     grid-gap: 10px;
