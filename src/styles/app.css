@@ -661,8 +661,8 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-head {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #fff;
     background: var(--color-base);
 }
@@ -720,7 +720,7 @@ h6 {
 }
 
 .site-banner-image {
-    background-image: url("https://ghost.jaykannaiyan.com/content/images/2019/04/india-jeeptrip1.jpg");
+    background-image: url("https://photos.smugmug.com/photos/i-sRkxrGT/0/45cdfc5e/X2/i-sRkxrGT-X2.jpg");
     background-position: center center;
     background-size: cover;
     /* height: 300px; */
