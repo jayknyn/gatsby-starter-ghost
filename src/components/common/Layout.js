@@ -36,14 +36,17 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 {/* The main header section on top of the screen */}
                 <header className="site-head">
                     <div className="container">
+                        <img src={site.cover_image} alt={site.title} />
+                    </div>
+                    <div className="container">
                         <div className="site-mast">
                             <div className="site-mast-left">
-                                <Link to="/">
-                                    {site.logo ?
-                                        <img className="site-logo" src={site.logo} alt={site.title} />
-                                        : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
-                                    }
-                                </Link>
+                              <Link to="/">
+                                  {site.logo ?
+                                    <img className="site-logo" src={site.logo} alt={site.title} />
+                                    : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                  }
+                              </Link>
                             </div>
                             <div className="site-mast-right">
                                 { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
@@ -53,7 +56,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         </div>
                         { isHome ?
                             <div className="site-banner">
-                                <img className="site-banner-image" src={site.cover_image} alt={site.title} />
+                                
                                 <h1 className="site-banner-title">{site.title}</h1>
                                 <p className="site-banner-desc">{site.description}</p>
                             </div> :
@@ -79,16 +82,16 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
             <div className="viewport-bottom">
                 {/* The footer at the very bottom of the screen */}
-                <footer className="site-foot">
-                    <div className="site-foot-nav container">
-                        <div className="site-foot-nav-left">
-                            <Link to="/">{site.title}</Link> © 2019 &mdash; Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
-                        </div>
-                        <div className="site-foot-nav-right">
-                            <Navigation data={site.navigation} navClass="site-foot-nav-item" />
-                        </div>
+            <footer className="site-foot">
+                <div className="site-foot-nav container">
+                    <div className="site-foot-nav-left">
+                        <Link to="/">{site.title}</Link> © 2019 &mdash; Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
                     </div>
-                </footer>
+                    <div className="site-foot-nav-right">
+                        <Navigation data={site.navigation} navClass="site-foot-nav-item" />
+                    </div>
+                </div>
+            </footer>
 
             </div>
         </div>
