@@ -55,7 +55,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <div className="site-banner">
                                 {/* <img className="site-banner-image" src={site.cover_image} alt={site.title} /> */}
                                 <div className="site-banner-image" style={{
-                                    backgroundImage: `url(${site.cover_image})` ,
+                                    backgroundImage: `url("${site.cover_image}")` ,
                                 }}></div>
                                 <h1 className="site-banner-title">{site.title}</h1>
                                 <p className="site-banner-desc">{site.description}</p>
