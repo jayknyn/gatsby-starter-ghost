@@ -443,6 +443,7 @@ blockquote cite a {
 }
 
 a {
+    color: #26a8ed;
     text-decoration: none;
 }
 
@@ -773,9 +774,8 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .post-feed {
-    position: relative;
     display: grid;
-    margin: 0 -70px;
+    margin: 0 -20px;
     justify-content: space-between;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
