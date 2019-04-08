@@ -705,13 +705,14 @@ h6 {
 }
 
 .site-banner {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 10vw 0;
     text-align: center;
 }
 
 .site-banner-image {
+    background-image: url("https://ghost.jaykannaiyan.com/content/images/2019/04/india-jeeptrip1.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -775,7 +776,7 @@ h6 {
 .post-feed {
     position: relative;
     display: grid;
-    margin: 0 -70px;
+    margin: -70px 0 0 0;
     justify-content: space-between;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -795,7 +796,6 @@ h6 {
 .post-card {
     flex: 1 1 300px;
     display: flex;
-    padding: 1em;
     flex-direction: column;
     overflow: hidden;
     margin: 10px 10px 20px 40px;
@@ -825,13 +825,14 @@ h6 {
 
 .post-card-title {
     margin: 0 0 10px 0;
-    padding: 0;
+    padding: 1em;
 }
 
 .post-card-excerpt {
     font-size: 1.6rem;
     line-height: 1.55em;
     color: #3c484e;
+    padding: 1em;
 }
 
 .post-card-image {
@@ -844,6 +845,7 @@ h6 {
 }
 
 .post-card-footer {
+    padding: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
