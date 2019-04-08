@@ -35,9 +35,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <div className="viewport-top">
                 {/* The main header section on top of the screen */}
                 <header className="site-head">
-                    
-                        <img src={site.cover_image} alt={site.title} />
-                    
                     <div className="container">
                         <div className="site-mast">
                             <div className="site-mast-left">
@@ -56,7 +53,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         </div>
                         { isHome ?
                             <div className="site-banner">
-                                
+                                <img className="site-banner-image" src={site.cover_image} alt={site.title} />
                                 <h1 className="site-banner-title">{site.title}</h1>
                                 <p className="site-banner-desc">{site.description}</p>
                             </div> :
