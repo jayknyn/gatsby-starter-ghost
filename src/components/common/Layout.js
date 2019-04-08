@@ -110,7 +110,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     <div className="site-foot-nav-left">
                         <Link to="/">{site.title}</Link> © 2019 &mdash; 
                             Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>, 
-                            <a className="site-foot-nav-item" href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">GatsbyJS</a>, 
+                            <a className="site-foot-nav-item" href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer"> GatsbyJS</a>, 
                             and <a className="site-foot-nav-item" href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>
                     </div>
                     <div className="site-foot-nav-right">
