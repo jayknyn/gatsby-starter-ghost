@@ -177,9 +177,15 @@ module.exports = {
                 createLinkInHead: true,
             },
         },
+        {
+            resolve: `gatsby-plugin-favicon`,
+            options: {
+              logo: "./static/favicon.png",
+    
+            }
+          }
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
-        `gatsby-plugin-favicon`,
     ],
 }
