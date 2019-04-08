@@ -67,7 +67,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             </nav>
                         </div>
                     </header>
-                    : <header className="site-head">
+                    : <header className="site-head" className="site-head-not-home">
                         <div className="container">
                             <div className="site-mast">
                                 <div className="site-mast-left">

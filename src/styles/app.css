@@ -23,7 +23,7 @@ what's here to work the way you'd like it to.
 
     /* Colours */
     --color-primary: #3eb0ef;
-    --color-base: #15171A;
+    --color-base: #333;
     --color-secondary: #5B7A81;
     --color-border: #c7d5d8;
     --color-bg: #f5f5f5;
@@ -667,6 +667,13 @@ h6 {
     background: var(--color-base);
 }
 
+.site-head-not-home {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background: var(--color-base);
+}
+
 .site-nav-item {
     display: inline-block;
     padding: 5px 10px;
@@ -715,7 +722,7 @@ h6 {
     background-image: url("https://ghost.jaykannaiyan.com/content/images/2019/04/india-jeeptrip1.jpg");
     background-position: center center;
     background-size: cover;
-    height: 400px;
+    height: 300px;
 }
 
 .site-banner-title {
@@ -769,7 +776,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-main {
-    padding: 0 0;
+    padding: 4vw 0;
 }
 
 /* Index
@@ -827,7 +834,7 @@ h6 {
 
 
 .post-card-title {
-    padding: 0;
+    padding: 0 .5em;
 }
 
 .post-card-excerpt {
