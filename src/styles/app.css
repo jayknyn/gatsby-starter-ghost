@@ -661,15 +661,15 @@ h6 {
 /* ---------------------------------------------------------- */
 
 .site-head {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #fff;
     background: var(--color-base);
 }
 
 .site-head-not-home {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: #fff;
     background: var(--color-base);
 }
@@ -699,6 +699,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px 0;
 }
 
 .site-mast-right {
