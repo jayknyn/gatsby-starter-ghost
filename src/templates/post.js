@@ -59,8 +59,8 @@ const Post = ({ data, location }) => {
                                             {post.primary_author.bio && <p>{post.primary_author.bio}</p>}
                                             <div className="author-header-meta">
                                                 {post.primary_author.website && <a className="author-header-item" href={post.primary_author.website} target="_blank" rel="noopener noreferrer">Website</a>}
-                                                {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
-                                                {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
+                                                {post.primary_author.twitterUrl && <a className="author-header-item" href={post.primary_author.twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
+                                                {post.primary_author.facebookUrl && <a className="author-header-item" href={post.primary_author.facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
                                             </div>
                                         </div>
                                         <div className="author-header-image">
