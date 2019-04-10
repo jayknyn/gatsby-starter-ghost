@@ -31,13 +31,19 @@ const Post = ({ data, location }) => {
                             <section className="post-full-content">
                                 <h1 className="content-title">{post.title}</h1>
                                 <div className="container">
+                                        {/* <div className="post-card-avatar">
+                                            {post.primary_author.profile_image ?
+                                                <img className="author-profile-image" src={post.primary_author.profile_image} alt={post.primary_author.name}/> :
+                                                <img className="default-avatar" src="/images/icons/avatar.svg" alt={post.primary_author.name}/>
+                                            }
+                                        </div> */}
                                     <header className="author-header">
                                         <div className="author-header-content">
-                                            <h2>By {author.name}</h2>
-                                            {author.bio && <p>{author.bio}</p>}
+                                            <h2>By {post.primary_author.name}</h2>
+                                            {post.primary_author.bio && <p>{post.primary_author.bio}</p>}
                                         </div>
                                         <div className="author-header-image">
-                                            {author.profile_image && <img src={author.profile_image} alt={author.name} />}
+                                            {post.primary_author.profile_image && <img src={post.primary_author.profile_image} alt={post.primary_author.name} />}
                                         </div>
                                     </header>
                                 </div>
@@ -49,16 +55,16 @@ const Post = ({ data, location }) => {
                                 <div className="container">
                                     <header className="author-header">
                                         <div className="author-header-content">
-                                            <h2>{author.name}</h2>
-                                            {author.bio && <p>{author.bio}</p>}
+                                            <h2>{post.primary_author.name}</h2>
+                                            {post.primary_author.bio && <p>{post.primary_author.bio}</p>}
                                             <div className="author-header-meta">
-                                                {author.website && <a className="author-header-item" href={author.website} target="_blank" rel="noopener noreferrer">Website</a>}
+                                                {post.primary_author.website && <a className="author-header-item" href={post.primary_author.website} target="_blank" rel="noopener noreferrer">Website</a>}
                                                 {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
                                                 {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
                                             </div>
                                         </div>
                                         <div className="author-header-image">
-                                            {author.profile_image && <img src={author.profile_image} alt={author.name} />}
+                                            {post.primary_author.profile_image && <img src={post.primary_author.profile_image} alt={post.primary_author.name} />}
                                         </div>
                                     </header>
                                 </div>
