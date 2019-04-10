@@ -30,12 +30,38 @@ const Post = ({ data, location }) => {
                                 </figure> : null }
                             <section className="post-full-content">
                                 <h1 className="content-title">{post.title}</h1>
-
+                                <div className="container">
+                                    <header className="author-header">
+                                        <div className="author-header-content">
+                                            <h2>By {author.name}</h2>
+                                            {author.bio && <p>{author.bio}</p>}
+                                        </div>
+                                        <div className="author-header-image">
+                                            {author.profile_image && <img src={author.profile_image} alt={author.name} />}
+                                        </div>
+                                    </header>
+                                </div>
                                 {/* The main post content */ }
                                 <section
                                     className="content-body load-external-scripts"
                                     dangerouslySetInnerHTML={{ __html: post.html }}
                                 />
+                                <div className="container">
+                                    <header className="author-header">
+                                        <div className="author-header-content">
+                                            <h2>{author.name}</h2>
+                                            {author.bio && <p>{author.bio}</p>}
+                                            <div className="author-header-meta">
+                                                {author.website && <a className="author-header-item" href={author.website} target="_blank" rel="noopener noreferrer">Website</a>}
+                                                {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
+                                                {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
+                                            </div>
+                                        </div>
+                                        <div className="author-header-image">
+                                            {author.profile_image && <img src={author.profile_image} alt={author.name} />}
+                                        </div>
+                                    </header>
+                                </div>
                             </section>
                         </article>
                     </div>
