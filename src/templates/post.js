@@ -58,9 +58,9 @@ const Post = ({ data, location }) => {
                                                 {post.primary_author.twitterUrl && <a className="author-header-item" href={post.primary_author.twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
                                                 {post.primary_author.facebookUrl && <a className="author-header-item" href={post.primary_author.facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
                                             </div>
-                                            <div>
+                                            {/* <div>
                                                 <span className="author-location">{post.primary_author.location}</span>.<span className="author-stats">{post.primary_author.stats}</span>
-                                            </div>
+                                            </div> */}
                                         </div>
                                         <div className="author-header-image">
                                             {post.primary_author.profile_image && <img src={post.primary_author.profile_image} alt={post.primary_author.name} />}

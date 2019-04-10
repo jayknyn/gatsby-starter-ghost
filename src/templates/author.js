@@ -35,9 +35,9 @@ const Author = ({ data, location, pageContext }) => {
                                 {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
                                 {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
                             </div>
-                            <div>
+                            {/* <div>
                                 <span className="author-location">{post.primary_author.location}</span>.<span className="author-stats">{post.primary_author.stats}</span>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="author-header-image">
                             {author.profile_image && <img src={author.profile_image} alt={author.name} />}
