@@ -28,12 +28,15 @@ const Author = ({ data, location, pageContext }) => {
                 <div className="container">
                     <header className="author-header">
                         <div className="author-header-content">
-                            <h1>{author.name}</h1>
+                            <h2>{author.name}</h2>
                             {author.bio && <p>{author.bio}</p>}
                             <div className="author-header-meta">
-                                {author.website && <a className="author-header-item" href={author.website} target="_blank" rel="noopener noreferrer">Website</a>}
+                                {author.website && <a className="author-header-item" href={author.website} target="_blank" rel="noopener noreferrer">GitHub</a>}
                                 {twitterUrl && <a className="author-header-item" href={twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
                                 {facebookUrl && <a className="author-header-item" href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
+                            </div>
+                            <div>
+                                <span className="author-location">{post.primary_author.location}</span>.<span className="author-stats">{post.primary_author.stats}</span>
                             </div>
                         </div>
                         <div className="author-header-image">

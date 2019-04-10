@@ -55,6 +55,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <div className="site-banner" >
                                 <h1 className="site-banner-title">{site.title}</h1>
                                 <p className="site-banner-desc">{site.description}</p>
+                                <div className="author-header-image">
+                                    {site.primary_author.profile_image && <img src={site.primary_author.profile_image} alt={site.primary_author.name} />}
+                                </div>
                             </div> 
                             <nav className="site-nav">
                                 {/* <div className="site-nav-left"> */}
@@ -65,6 +68,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <Link className="site-nav-button" to="/about">About</Link>
                                 </div> */}
                             </nav>
+                            <div className="site-mast-right">
+                                <p>Sunrise on the Kenyan coast</p>
+                            </div>
                         </div>
                     </header>
                     : <header className="site-head" className="site-head-not-home">

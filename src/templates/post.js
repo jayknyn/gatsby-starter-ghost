@@ -31,12 +31,6 @@ const Post = ({ data, location }) => {
                             <section className="post-full-content">
                                 <h1 className="content-title">{post.title}</h1>
                                 <div className="container">
-                                        {/* <div className="post-card-avatar">
-                                            {post.primary_author.profile_image ?
-                                                <img className="author-profile-image" src={post.primary_author.profile_image} alt={post.primary_author.name}/> :
-                                                <img className="default-avatar" src="/images/icons/avatar.svg" alt={post.primary_author.name}/>
-                                            }
-                                        </div> */}
                                     <header className="author-header">
                                         <div className="author-header-content">
                                             <h2>By {post.primary_author.name}</h2>
@@ -52,15 +46,20 @@ const Post = ({ data, location }) => {
                                     className="content-body load-external-scripts"
                                     dangerouslySetInnerHTML={{ __html: post.html }}
                                 />
+                                {/* Author div page bottom*/}
                                 <div className="container">
                                     <header className="author-header">
                                         <div className="author-header-content">
+                                            <h3>About the author</h3>
                                             <h2>{post.primary_author.name}</h2>
                                             {post.primary_author.bio && <p>{post.primary_author.bio}</p>}
                                             <div className="author-header-meta">
-                                                {post.primary_author.website && <a className="author-header-item" href={post.primary_author.website} target="_blank" rel="noopener noreferrer">Website</a>}
+                                                {post.primary_author.website && <a className="author-header-item" href={post.primary_author.website} target="_blank" rel="noopener noreferrer">Github</a>}
                                                 {post.primary_author.twitterUrl && <a className="author-header-item" href={post.primary_author.twitterUrl} target="_blank" rel="noopener noreferrer">Twitter</a>}
                                                 {post.primary_author.facebookUrl && <a className="author-header-item" href={post.primary_author.facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>}
+                                            </div>
+                                            <div>
+                                                <span className="author-location">{post.primary_author.location}</span>.<span className="author-stats">{post.primary_author.stats}</span>
                                             </div>
                                         </div>
                                         <div className="author-header-image">
