@@ -125,7 +125,7 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
+    margin: auto;
     padding: 0;
     border: 0;
     font: inherit;
@@ -656,6 +656,13 @@ h6 {
     font-size: 2.8rem;
     font-weight: 700;
     border-radius: 12px;
+}
+
+figure img {
+    outline: 1px solid #aaa;
+    outline-offset: 5px;
+    vertical-align: middle;
+    margin: auto;
 }
 
 .content-body pre {

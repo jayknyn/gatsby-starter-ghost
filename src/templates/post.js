@@ -26,7 +26,7 @@ const Post = ({ data, location }) => {
                         <article className="content">
                             { post.feature_image ?
                                 <figure className="post-feature-image">
-                                    <img src={ post.feature_image } alt={ post.title } />
+                                    <img src={post.feature_image} alt={post.title} title={post.title}/>
                                 </figure> : null }
                             <section className="post-full-content">
                                 <h1 className="content-title">{post.title}</h1>
