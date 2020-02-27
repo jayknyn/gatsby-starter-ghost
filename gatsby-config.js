@@ -57,10 +57,13 @@ module.exports = {
         `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-source-ghost`,
-            options:
-                process.env.NODE_ENV === `development`
-                    ? ghostConfig.development
-                    : ghostConfig.production,
+            options: {
+                apiUrl: `https://ghost.jaykannaiyan.com`,
+                contentApiKey: `e32324297a290708432017ceec`
+            }
+            // process.env.NODE_ENV === `development`
+            //     ? ghostConfig.development
+            //     : ghostConfig.production,
         },
         /**
          *  Utility Plugins
@@ -180,7 +183,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-favicon`,
             options: {
-              logo: "./static/favicon.png",
+                logo: "./static/favicon.png",
             },
         },
         `gatsby-plugin-react-helmet`,
