@@ -728,19 +728,24 @@ h6 {
     padding-top: 5px;
     padding-bottom: 5px;
     color: #fff;
-    background: var(--color-base);
+    /* background: var(--color-base); */
+    /* background: linear-gradient(to right,#616161, #757575,#616161); */
+    /* background: linear-gradient(to right,#005b96, #3f7fb8,#005b96); */
+    background: linear-gradient(to right,#763a76, #916191,#763a76);
 }
 
 .site-nav-item {
     display: inline-block;
     padding: 5px 10px;
-    color: #fff;
+    /* color: #fff; */
+    color: rgba(255,255,255,0.85);
     opacity: 0.9;
 }
 
 .site-nav-item:hover {
     text-decoration: none;
     opacity: 1;
+    color: rgba(255,255,255,1);
 }
 
 .site-nav-icon {
@@ -767,6 +772,7 @@ h6 {
 
 .site-mast-right p {
     stroke: #eee;
+    /* stroke: linear-gradient(#00bfff 	#007aa3); */
     stroke-opacity: 0.7;
 }
 
@@ -870,7 +876,7 @@ h6 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 10px 10px 20px 40px;
+    margin: 10px 20px 20px 20px;
     min-height: 300px;
     background: center center;
     background-size: cover;
@@ -997,6 +1003,12 @@ h6 {
     margin: 0 0 4vw;
 }
 
+.author-header-blog {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vw 0 4vw;
+}
+
 .author-header h3 {
     margin: 0 0 1rem 0;
     color: var(--color-base);
@@ -1005,10 +1017,17 @@ h6 {
 }
 
 .author-header h2 {
-    margin: 0 0 1rem 0;
+    margin: 1rem 0 1rem 0;
     color: var(--color-secondary);
     font-size: 2.2rem;
     line-height: 1.3em;
+}
+
+.author-header h1 {
+    margin: 0 0 2rem 0;
+    color: var(--color-secondary);
+    font-size: 3rem;
+    line-height: 1.5em;
 }
 
 .author-header p {
@@ -1023,6 +1042,15 @@ h6 {
     margin: 0 0 0 4vw;
     height: 120px;
     width: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.author-header-image-top {
+    flex: 0 0 auto;
+    margin: 0 0 0 4vw;
+    height: 60px;
+    width: 60px;
     border-radius: 100%;
     overflow: hidden;
 }
@@ -1110,7 +1138,8 @@ h6 {
     padding: 20px 0 40px 0;
     color: rgba(255,255,255,0.7);
     font-size: 1.5rem;
-    background: var(--color-base);
+    /* background: var(--color-base); */
+    background: linear-gradient(to right,#763a76, #916191,#763a76);
 }
 
 .site-foot-nav {
