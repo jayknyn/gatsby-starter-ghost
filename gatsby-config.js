@@ -58,8 +58,8 @@ module.exports = {
         {
             resolve: `gatsby-source-ghost`,
             options: {
-                apiUrl: `https://ghost.jaykannaiyan.com`,
-                contentApiKey: `e32324297a290708432017ceec`
+                apiUrl: `https://ghostjibhi.jaykannaiyan.com`,
+                contentApiKey: `a778796c506f2e96c439027351`
             }
             // process.env.NODE_ENV === `development`
             //     ? ghostConfig.development
